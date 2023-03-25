@@ -34,36 +34,25 @@ pip install torch_geometric==1.7.0
 
 
 
-## File Structure
+## Preprocessing
 
-```python
-[<cwd>]
-   |-----[<data_root>]
-   |           |-------[<feature_root>]
-   |           |               |--------subject1.npy
-   |           |               |--------subject2.npy
-   |           |               |--------    ...
-   |           |-------[label]  # use expert1
-   |           |          |----1_1.npy
-   |           |          |----2_1.npy
-   |           |          |----  ...
-   |           |-------[<adj_mat_root>]
-   |                           |--------subject_1_adj_mat.npy
-   |                           |--------subject_2_adj_mat.npy
-   |                           |--------          ...
-   |-----[configs]
-   |         |--------config.ini
-   |-----*.py
+1. Download the raw data:
+```shell
+./get_data.sh
+```
+
+2. Preprocessing the data:
+```shell
+python preprocess.py
 ```
 
 
 
 ## Training and Evaluation
 
-Run this command for training and evaluation:
-
-```train
-python training.py -c ./configs/config.ini
+For training and evaluation, modify the [config](https://github.com/zhouyh310/SleepHGNN/blob/main/config.py) file and run this command:
+```shell
+python training.py
 ```
 
 
