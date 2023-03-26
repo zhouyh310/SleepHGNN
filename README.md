@@ -9,6 +9,7 @@
 - Python 3.7
 - PyTorch 1.8.0
 - PyTorch Geometric 1.7.0
+- MNE 1.3.1
 - CUDA 10.1
 
 #### Steps:
@@ -36,12 +37,17 @@ pip install torch_geometric==1.7.0
 
 ## Preprocessing
 
-1. Download the raw data:
+1. Install `unrar` to extract .rar file from ISRUC dataset.
+```shell
+sudo apt-get install unrar
+```
+
+2. Download the raw data:
 ```shell
 ./get_data.sh
 ```
 
-2. Preprocessing the data:
+3. Preprocessing the data:
 ```shell
 python preprocess.py
 ```
