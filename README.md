@@ -1,4 +1,4 @@
-# Heterogeneous Graph Pooling Neural Network for Sleep Stage Classification
+# Exploiting Interactivity and Heterogeneity for Sleep Stage Classification via Heterogeneous Graph Neural Network
 
 ![model_architecture](fig/model_arc.jpg)
 
